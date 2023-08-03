@@ -1,7 +1,9 @@
 const fs = require("fs");
+const path = require("path");
+const dataFilePath = path.resolve(__dirname, "../data/data.json");
 
 const getData = (req, res) => {
-  fs.readFile("data/data.json", "utf8", (err, data) => {
+  fs.readFile(dataFilePath, "utf8", (err, data) => {
     if (err) {
       console.error("Ошибка при чтении файла:", err);
       res.status(500).json({ error: "Ошибка сервера" });
@@ -18,11 +20,11 @@ const getData = (req, res) => {
 };
 
 const saveData = (req, res) => {
-  const data = req.body;
+  const data = req.body.fitnessData;
 
-  const jsonData = JSON.stringify(data);
+  const jsonData = JSON.stringify({ fitnessData: data });
 
-  fs.writeFile("data/data.json", jsonData, "utf8", (err) => {
+  fs.writeFile(dataFilePath, jsonData, "utf8", (err) => {
     if (err) {
       console.error("Ошибка при записи в файл:", err);
       res.status(500).json({ error: "Ошибка сервера" });
