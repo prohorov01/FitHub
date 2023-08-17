@@ -1,28 +1,61 @@
 const express = require("express");
-const cors = require("cors");
-const path = require("path");
+const bodyParser = require("body-parser");
+const fs = require("fs");
 const app = express();
-const dataRoutes = require("./routes/dataRoutes");
+const PORT = process.env.PORT || 3000;
 
-app.use(express.json());
-app.use(cors());
+app.use(bodyParser.json());
 
-const indexPath = path.resolve(__dirname, "../client/src/index.html");
-
-app.use(express.static(path.resolve(__dirname, "../client/src")));
-app.use(dataRoutes);
-
-app.get("/", (req, res) => {
-  fs.readFile(indexPath, "utf8", (err, data) => {
+app.get("/api/users", (req, res) => {
+  fs.readFile("server.json", "utf8", (err, data) => {
     if (err) {
-      console.error("Ошибка при чтении файла:", err);
-      res.status(500).json({ error: "Ошибка сервера" });
-    } else {
-      res.send(data);
+      res.status(500).json({ error: "Error reading data" });
+      return;
     }
+    const users = JSON.parse(data).users;
+    res.json(users);
   });
 });
 
-app.listen(3000, () => {
-  console.log("Сервер запущен на порту 3000");
+app.post("/api/users", (req, res) => {
+  const newUser = req.body;
+  fs.readFile("server.json", "utf8", (err, data) => {
+    if (err) {
+      res.status(500).json({ error: "Error reading data" });
+      return;
+    }
+    const jsonData = JSON.parse(data);
+    jsonData.users.push(newUser);
+    fs.writeFile("server.json", JSON.stringify(jsonData), (err) => {
+      if (err) {
+        res.status(500).json({ error: "Error writing data" });
+        return;
+      }
+      res.json(newUser);
+    });
+  });
+});
+
+app.post("/api/users/:id", (req, res) => {
+  const userId = req.params.id;
+  const updatedData = req.body;
+  fs.readFile("server.json", "utf8", (err, data) => {
+    if (err) {
+      res.status(500).json({ error: "Error reading data" });
+      return;
+    }
+    const jsonData = JSON.parse(data);
+    jsonData.users[userId] = { ...jsonData.users[userId], ...updatedData };
+    fs.writeFile("server.json", JSON.stringify(jsonData), (err) => {
+      if (err) {
+        res.status(500).json({ error: "Error writing data" });
+        return;
+      }
+      res.json(jsonData.users[userId]);
+    });
+  });
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });

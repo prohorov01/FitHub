@@ -1,0 +1,54 @@
+.bg-free {
+  background-image: url(https://fithub.id/_next/static/media/bg-free-trial.d1435917.webp);
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 24px;
+  background-size: cover;
+  background-position: 50%;
+  padding: 2rem;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 80%;
+  margin-bottom: 20px;
+}
+.text-white {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  letter-spacing: -0.022em;
+}
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border-width: 0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 0.625rem 1.25rem;
+  text-align: center;
+  color: rgba(20, 54, 80, 0.96);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: inherit;
+}
+.Button:hover {
+  color: #ff9900;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}

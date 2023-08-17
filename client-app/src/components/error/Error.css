@@ -1,0 +1,58 @@
+.bg-error {
+  background-image: url(https://fithub.id/wp-content/uploads/2022/02/header-location.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-top: -400px;
+}
+.bg-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 86px;
+  margin: 18% 0 10%;
+  padding-top: 15%;
+  color: #fff;
+  text-align: Center;
+}
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.not-found {
+  margin-top: 14px;
+}
+.not-found h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  color: #143650 !important;
+  margin-bottom: 20px;
+}
+
+.not-title {
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: rgba(20, 54, 80, 0.75);
+  margin-bottom: 30px !important;
+}
+.return-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.return-button:hover {
+  background-color: #0056b3;
+}

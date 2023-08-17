@@ -1,0 +1,149 @@
+.profile {
+  padding: 20px;
+  background-image: url(https://fithub.id/free-trial/static/media/fit-hub-karang-mulya.da0c7fbfc5e13f157589.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  display: flex;
+  flex-direction: column;
+  min-height: 76vh;
+}
+.profile h2 {
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.delete-profile-button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.delete-profile-button:hover {
+  background-color: #cc0000;
+  transition: background-color 0.3s ease;
+}
+
+.user-data {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.edit-profile-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-button:hover {
+  background-color: #0056b3;
+}
+.add-user-button {
+  background-color: #008000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.user-selection {
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.user-selection select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+.add-user-button:hover {
+  background-color: #006600;
+  transition: background-color 0.3s ease;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.user-data {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.user-data h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.user-data p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.edit-profile-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-profile-button:hover {
+  background-color: #0056b3;
+}

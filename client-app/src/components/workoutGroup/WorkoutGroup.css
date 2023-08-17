@@ -1,0 +1,24 @@
+.workout-group {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 16px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.workout-group h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.workout-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.workout-programs-h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+}

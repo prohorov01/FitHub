@@ -9,6 +9,10 @@
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.27.12"
+    "browser-sync": "^2.29.3"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "local": "^0.3.3"
   }
 }

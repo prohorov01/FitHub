@@ -1,0 +1,41 @@
+.services {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-left: 60px;
+  color: azure;
+}
+.bg-services {
+  background-image: url(https://fithub.id/wp-content/uploads/2023/05/image-1-1.png);
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 74vh;
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 22px;
+  font-weight: 700;
+  flex-direction: column;
+}
+
+.services-h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  margin-top: -25px;
+}
+
+.services-h3 {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.services-p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}

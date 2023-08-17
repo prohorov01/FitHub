@@ -1,0 +1,17 @@
+.about-us {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 80vh;
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 22px;
+  font-weight: 700;
+  flex-direction: column;
+}
+.bg-about {
+  background-image: url(https://fithub.id/wp-content/uploads/2022/07/image-1.png);
+}

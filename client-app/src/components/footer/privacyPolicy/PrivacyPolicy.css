@@ -1,0 +1,28 @@
+.privacy-policy {
+  margin: 0 auto;
+  padding: 20px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 75.3vh;
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 22px;
+  font-weight: 700;
+  flex-direction: column;
+}
+
+.privacy-policy h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.privacy-policy p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,71 @@
+.workout-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 25%;
+}
+
+.bg-card {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/thehub-965c7.appspot.com/o/web-schedules%2Fedited-v4%2FFit%20Cycle.png?alt=media&token=57996c5c-022d-4dbf-a9c3-3dc374150b28);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+.bg-card3 {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/thehub-965c7.appspot.com/o/web-schedules%2Fedited-v4%2FCardio%20Dance.png?alt=media&token=c7657bb8-791a-4440-afe7-7edf4332a43d);
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+}
+
+.workout-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.completed {
+  background-color: #f0f0f0;
+}
+
+button {
+  background-color: #008000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+button:hover {
+  background-color: #006600;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #7d7c7c;
+  cursor: not-allowed;
+}
