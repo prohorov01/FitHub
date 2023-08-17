@@ -5,8 +5,12 @@
   "main": "index.html",
   "scripts": {
     "start": " node server/index.js",
-    "json-server": "json-server --watch db.json --port 3001"
+    "json-server": "json-server --watch db.json --port 3001",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
+  "homepage": "https://prohorov01.github.io",
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
@@ -149,6 +153,7 @@
     "get-caller-file": "^2.0.5",
     "get-intrinsic": "^1.2.1",
     "get-value": "^2.0.6",
+    "gh-pages": "^6.0.0",
     "glob": "^7.2.3",
     "glob-parent": "^5.1.2",
     "glob-stream": "^6.1.0",
